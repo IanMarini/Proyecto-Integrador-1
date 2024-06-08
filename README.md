@@ -121,7 +121,6 @@ Gestionar Préstamos
 - Registrar Préstamo
 - Ver Préstamos
 - Registrar Devolución
- 
 Salir
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Sistema de Gestión de Biblioteca
