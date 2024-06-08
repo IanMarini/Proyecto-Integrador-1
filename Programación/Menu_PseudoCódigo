@@ -1,0 +1,224 @@
+Algoritmo Menu_principal
+    Escribir 'Bienvenido al sistema de gestión de biblioteca'
+    Escribir ""
+    Escribir '1. Gestionar Libros'
+    Escribir '2. Gestionar Usuarios'
+    Escribir '3. Gestionar Préstamos'
+    Escribir '4. Salir'
+    Escribir ""
+    Escribir 'Por favor, elija la opción deseada'
+    Leer num
+    Según num Hacer
+1:
+	mostrar_menu_libros()
+2:
+	mostrar_menu_usuarios()
+3:
+	mostrar_menu_prestamos()
+4:
+	Escribir 'Saliendo del sistema...'
+De Otro Modo:
+	Escribir 'Por favor, ingrese una opción válida'
+	Menu_principal() // Volver a mostrar el menú principal si la opción es inválida
+FinSegún
+FinAlgoritmo
+
+// Procedimiento para mostrar el menú de libros
+SubProceso mostrar_menu_libros
+    Escribir ""
+    Escribir 'a. Agregar Libro'
+    Escribir 'b. Ver Libros'
+    Escribir 'c. Actualizar Libro'
+    Escribir 'd. Eliminar Libro'
+    Escribir 'e. Volver al menú principal'
+    Escribir ""
+    Escribir 'Por favor, elija la opción deseada'
+    Leer opcion_menu_libros
+    Segun opcion_menu_libros Hacer
+        'a':
+            AgregarLibro() // Llama a la función para agregar un libro
+        'b':
+            VerLibros() // Llama a la función para ver la lista de libros
+        'c':
+            ActualizarLibro() // Llama a la función para actualizar un libro
+        'd':
+            EliminarLibro() // Llama a la función para eliminar un libro
+        'e':
+            Menu_principal()
+        De Otro Modo:
+            Escribir 'Por favor, ingrese una opción válida'
+            mostrar_menu_libros()
+    FinSegún
+FinSubProceso
+
+// Procedimiento para agregar un libro
+SubProceso AgregarLibro
+    Escribir 'Ingrese el título del libro:'
+    Leer titulo
+    Escribir 'Ingrese el autor del libro:'
+    Leer autor
+    Escribir 'Ingrese el año de publicación del libro:'
+    Leer ano
+    Escribir 'Ingrese el ISBN del libro:'
+    Leer isbn
+    // Aquí se guardarían los datos del libro, por ejemplo en una lista o archivo
+    Escribir 'Libro agregado exitosamente: ', titulo, ' por ', autor
+    mostrar_menu_libros()
+FinSubProceso
+
+// Procedimiento para ver la lista de libros
+SubProceso VerLibros
+    // Aquí se mostraría la lista de libros, por ejemplo leyendo de una lista o archivo
+    Escribir 'Lista de libros...'
+    mostrar_menu_libros()
+FinSubProceso
+
+// Procedimiento para actualizar un libro
+SubProceso ActualizarLibro
+    Escribir 'Ingrese el ISBN del libro a actualizar:'
+    Leer isbn
+    // Aquí se buscaría el libro por su ISBN y se actualizarían sus datos
+    Escribir 'Ingrese el nuevo título del libro:'
+    Leer nuevo_titulo
+    Escribir 'Ingrese el nuevo autor del libro:'
+    Leer nuevo_autor
+    Escribir 'Ingrese el nuevo año de publicación del libro:'
+    Leer nuevo_ano
+    // Aquí se actualizarían los datos del libro en la lista o archivo
+    Escribir 'Libro actualizado exitosamente'
+    mostrar_menu_libros()
+FinSubProceso
+
+// Procedimiento para eliminar un libro
+SubProceso EliminarLibro
+    Escribir 'Ingrese el ISBN del libro a eliminar:'
+    Leer isbn
+    // Aquí se eliminaría el libro por su ISBN de la lista o archivo
+    Escribir 'Libro eliminado exitosamente'
+    mostrar_menu_libros()
+FinSubProceso
+
+// Procedimiento para mostrar el menú de usuarios
+SubProceso mostrar_menu_usuarios
+    Escribir ""
+    Escribir 'a. Agregar Usuario'
+    Escribir 'b. Ver Usuarios'
+    Escribir 'c. Actualizar Usuario'
+    Escribir 'd. Eliminar Usuario'
+    Escribir 'e. Volver al menú principal'
+    Escribir ""
+    Escribir 'Por favor, elija la opción deseada'
+    Leer opcion_menu_usuarios
+    Segun opcion_menu_usuarios Hacer
+        'a':
+            AgregarUsuario() // Llama a la función para agregar un usuario
+        'b':
+            VerUsuarios() // Llama a la función para ver la lista de usuarios
+        'c':
+            ActualizarUsuario() // Llama a la función para actualizar un usuario
+        'd':
+            EliminarUsuario() // Llama a la función para eliminar un usuario
+        'e':
+            Menu_principal()
+        De Otro Modo:
+            Escribir 'Por favor, ingrese una opción válida'
+            mostrar_menu_usuarios()
+    FinSegún
+FinSubProceso
+
+// Procedimiento para agregar un usuario
+SubProceso AgregarUsuario
+    Escribir 'Ingrese el nombre del usuario:'
+    Leer nombre
+    Escribir 'Ingrese el apellido del usuario:'
+    Leer apellido
+    Escribir 'Ingrese el ID del usuario:'
+    Leer id
+    // Aquí se guardarían los datos del usuario, por ejemplo en una lista o archivo
+    Escribir 'Usuario agregado exitosamente: ', nombre, ' ', apellido
+    mostrar_menu_usuarios()
+FinSubProceso
+
+// Procedimiento para ver la lista de usuarios
+SubProceso VerUsuarios
+    // Aquí se mostraría la lista de usuarios, por ejemplo leyendo de una lista o archivo
+    Escribir 'Lista de usuarios...'
+    mostrar_menu_usuarios()
+FinSubProceso
+
+// Procedimiento para actualizar un usuario
+SubProceso ActualizarUsuario
+    Escribir 'Ingrese el ID del usuario a actualizar:'
+    Leer id
+    // Aquí se buscaría el usuario por su ID y se actualizarían sus datos
+    Escribir 'Ingrese el nuevo nombre del usuario:'
+    Leer nuevo_nombre
+    Escribir 'Ingrese el nuevo apellido del usuario:'
+    Leer nuevo_apellido
+    // Aquí se actualizarían los datos del usuario en la lista o archivo
+    Escribir 'Usuario actualizado exitosamente'
+    mostrar_menu_usuarios()
+FinSubProceso
+
+// Procedimiento para eliminar un usuario
+SubProceso EliminarUsuario
+    Escribir 'Ingrese el ID del usuario a eliminar:'
+    Leer id
+    // Aquí se eliminaría el usuario por su ID de la lista o archivo
+    Escribir 'Usuario eliminado exitosamente'
+    mostrar_menu_usuarios()
+FinSubProceso
+
+// Procedimiento para mostrar el menú de préstamos
+SubProceso mostrar_menu_prestamos
+    Escribir ""
+    Escribir 'a. Registrar Préstamo'
+    Escribir 'b. Ver Préstamos'
+    Escribir 'c. Registrar Devolución'
+    Escribir 'd. Volver al menú principal'
+    Escribir ""
+    Escribir 'Por favor, elija la opción deseada'
+    Leer opcion_menu_prestamos
+    Segun opcion_menu_prestamos Hacer
+        'a':
+            RegistrarPrestamo() // Llama a la función para registrar un préstamo
+        'b':
+            VerPrestamos() // Llama a la función para ver la lista de préstamos
+        'c':
+            RegistrarDevolucion() // Llama a la función para registrar la devolución de un libro
+        'd':
+            Menu_principal()
+        De Otro Modo:
+            Escribir 'Por favor, ingrese una opción válida'
+            mostrar_menu_prestamos()
+    FinSegún
+FinSubProceso
+
+// Procedimiento para registrar un préstamo
+SubProceso RegistrarPrestamo
+    Escribir 'Ingrese el ID del usuario que realiza el préstamo:'
+    Leer id_usuario
+    Escribir 'Ingrese el ISBN del libro a prestar:'
+    Leer isbn_libro
+    // Aquí se registrarían los datos del préstamo, por ejemplo en una lista o archivo
+    Escribir 'Préstamo registrado exitosamente para el usuario ', id_usuario, ' y el libro ', isbn_libro
+    mostrar_menu_prestamos()
+FinSubProceso
+
+// Procedimiento para ver la lista de préstamos
+SubProceso VerPrestamos
+    // Aquí se mostraría la lista de préstamos, por ejemplo leyendo de una lista o archivo
+    Escribir 'Lista de préstamos...'
+    mostrar_menu_prestamos()
+FinSubProceso
+
+// Procedimiento para registrar la devolución de un libro
+SubProceso RegistrarDevolucion
+    Escribir 'Ingrese el ID del usuario que devuelve el libro:'
+    Leer id_usuario
+    Escribir 'Ingrese el ISBN del libro a devolver:'
+    Leer isbn_libro
+    // Aquí se registrarían los datos de la devolución, por ejemplo en una lista o archivo
+    Escribir 'Devolución registrada exitosamente para el usuario ', id_usuario, ' y el libro ', isbn_libro
+    mostrar_menu_prestamos()
+FinSubProceso
