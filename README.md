@@ -127,12 +127,12 @@ Salir
 ## Sistema de Gestión de Biblioteca
 ### Descripción
 Esta es una aplicación modularizada para gestionar una biblioteca. Está dividida en varios archivos `.py` que contienen diferentes partes de la funcionalidad del sistema.
+
 ### Estructura del Proyecto
 - `index.py`: Archivo principal que contiene el menú principal de la aplicación.
-- `menu_libros.py`: Contiene las funciones para gestionar libros, incluyendo agregar, ver, actualizar y eliminar libros.
-- `menu_usuarios.py`: Contiene las funciones para gestionar usuarios, incluyendo agregar, ver, actualizar y eliminar usuarios.
-- `menu_prestamos.py`: Contiene las funciones para gestionar préstamos, incluyendo registrar préstamos, ver préstamos y registrar devoluciones.
-- `menu_categorias.py`: Contiene las funciones para la gestión de categorías como agregar, ver categorías y eliminar categorías.
+- `libros.py`: Contiene las funciones para gestionar libros, incluyendo agregar, ver, actualizar y eliminar libros.
+- `usuarios.py`: Contiene las funciones para gestionar usuarios, incluyendo agregar, ver, actualizar y eliminar usuarios.
+- `prestamos.py`: Contiene las funciones para gestionar préstamos, incluyendo registrar préstamos, ver préstamos y registrar devoluciones.
+- `categorias.py`: Contiene las funciones para la gestión de categorías como agregar, ver categorías y eliminar categorías.
 
-### Cómo Ejecutar
-Para ejecutar la aplicación, simplemente ejecute el archivo `index.py`.
+
