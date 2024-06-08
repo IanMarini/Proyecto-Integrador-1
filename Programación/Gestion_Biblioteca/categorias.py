@@ -1,3 +1,5 @@
+categorias = []  # Lista para almacenar categorías
+
 def mostrar_menu_categorias():
     print("")
     print('1. Agregar Categoría')
@@ -8,14 +10,34 @@ def mostrar_menu_categorias():
     opcion_menu_categorias = input('Por favor, elija la opción deseada: ')
 
     if opcion_menu_categorias == '1':
-        print('Agregar Categoría seleccionado')
+        agregar_categoria()
     elif opcion_menu_categorias == '2':
-        print('Ver Categorías seleccionado')
+        ver_categorias()
     elif opcion_menu_categorias == '3':
-        print('Eliminar Categoría seleccionado')
+        eliminar_categoria()
     elif opcion_menu_categorias == '4':
-        from index import menu_principal
         menu_principal()
     else:
         print('Por favor, ingrese una opción válida')
         mostrar_menu_categorias()
+
+def agregar_categoria():
+    print('Agregar Categoría seleccionado')
+    categorias.append(input('Ingrese el nombre de la categoría: '))
+    print('Categoría agregada exitosamente')
+    mostrar_menu_categorias()
+
+def ver_categorias():
+    print('Lista de categorías...')
+    for categoria in categorias:
+        print(categoria)
+    mostrar_menu_categorias()
+
+def eliminar_categoria():
+    categoria = input('Ingrese el nombre de la categoría a eliminar: ')
+    if categoria in categorias:
+        categorias.remove(categoria)
+        print('Categoría eliminada exitosamente')
+    else:
+        print('La categoría no existe')
+    mostrar_menu_categorias()
