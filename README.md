@@ -136,4 +136,5 @@ Esta es una aplicación modularizada para gestionar una biblioteca. Está dividi
 - `prestamos.py`: Contiene las funciones para gestionar préstamos, incluyendo registrar préstamos, ver préstamos y registrar devoluciones.
 - `categorias.py`: Contiene las funciones para la gestión de categorías como agregar, ver categorías y eliminar categorías.
 
-
+### Estructura de Archivos
+Programación / Gestion_Biblioteca / index.py / libros.py / usuarios.py / prestamos.py / categorias.py
