@@ -1,6 +1,6 @@
 Entrada:
-Usuario accede al sistema y ve el menú principal
-Usuario elige una opción del menú principal
+Un Usuario accede al sistema y ve el menú principal
+El Usuario elige una opción del menú principal
 
 Proceso:
 Mostrar el mensaje de bienvenida y el menú principal:
@@ -8,17 +8,19 @@ Mostrar el mensaje de bienvenida y el menú principal:
     1.Gestionar Libros
     2.Gestionar Usuarios
     3.Gestionar Préstamos
-    4.Salir
+    4.Gestionar Categorias
+    5.Salir
 Leer la opción elegida por el usuario
 Según la opción elegida:
   Opción 1: Llamar a mostrar_menu_libros()
   Opción 2: Llamar a mostrar_menu_usuarios()
   Opción 3: Llamar a mostrar_menu_prestamos()
-  Opción 4: Mostrar mensaje de salida y terminar
-  Opción no válida: Mostrar mensaje de error y volver a mostrar el menú principal
+  Opción 4: Llamar a mostrar_menu_categorias()
+  Opción 5: Mostrar mensaje de salida y terminar
+  Opción no válida: Mostrar un mensaje de error y volver a mostrar al comienzo para mostrar el menú principal
 
 Salida:
-Mensajes en pantalla según la opción elegida:
-  Submenús para gestionar libros, usuarios o préstamos
+Mensajes en pantalla según la opción elegida por el usuario:
+  Submenús para gestionar libros, usuarios, préstamos o categorias
   Mensaje de error si la opción no es válida
-  Mensaje de salida si elige la opción 4
+  Mensaje de salida si elige la opción 4 en el menú principal
