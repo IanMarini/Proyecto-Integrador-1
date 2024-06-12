@@ -1,3 +1,9 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ANÁLISIS ENTRADA PROCESO SALIDA.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CRUD MENU PRINCIPAL.
+
 Entrada:
 Un Usuario accede al sistema y ve el menú principal
 El Usuario elige una opción del menú principal
@@ -24,3 +30,123 @@ Mensajes en pantalla según la opción elegida por el usuario:
   Submenús para gestionar libros, usuarios, préstamos o categorias
   Mensaje de error si la opción no es válida
   Mensaje de salida si elige la opción 4 en el menú principal
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CRUD TABLA LIBROS
+
+Entrada:
+El usuario selecciona la opción de gestionar libros en el menú principal de la aplicación.
+
+Proceso:
+1.Mostrar el submenú de gestión de libros con las opciones CRUD.
+2.Leer la opción seleccionada por el usuario.
+3.Según la opción seleccionada:
+  Para "Crear Libro":
+    Solicitar al usuario los datos del libro (Título, Autor, ISBN, Editorial, Año de Publicación, Disponibilidad).
+    Validar los datos ingresados.
+    Insertar el nuevo libro en la base de datos.
+  Para "Leer Libro":
+    Mostrar todos los libros disponibles en la base de datos.
+  Para "Actualizar Libro":
+    Solicitar al usuario el ID del libro a actualizar.
+    Mostrar los datos actuales del libro.
+    Solicitar al usuario los nuevos datos del libro.
+    Validar los datos ingresados.
+    Actualizar el libro en la base de datos.
+  Para "Eliminar Libro":
+    Solicitar al usuario el ID del libro a eliminar.
+    Confirmar la eliminación.
+    Eliminar el libro de la base de datos.
+
+Salida:
+Mostrar mensajes de éxito o error según la acción realizada por el usuario.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CRUD TABLA USUARIOS
+
+Entrada:
+El usuario selecciona la opción de gestionar usuarios en el menú principal de la aplicación.
+
+Proceso:
+1.Mostrar el submenú de gestión de usuarios con las opciones CRUD.
+2.Leer la opción seleccionada por el usuario.
+3.Según la opción seleccionada:
+  Para "Crear Usuario":
+    Solicitar al usuario los datos del usuario (Nombre, Dirección, Teléfono, Email).
+    Validar los datos ingresados.
+    Insertar el nuevo usuario en la base de datos.
+  Para "Leer Usuario":
+    Mostrar todos los usuarios registrados en la base de datos.
+  Para "Actualizar Usuario":
+    Solicitar al usuario el ID del usuario a actualizar.
+    Mostrar los datos actuales del usuario.
+    Solicitar al usuario los nuevos datos del usuario.
+    Validar los datos ingresados.
+    Actualizar el usuario en la base de datos.
+  Para "Eliminar Usuario":
+    Solicitar al usuario el ID del usuario a eliminar.
+    Confirmar la eliminación.
+    Eliminar el usuario de la base de datos.
+
+Salida:
+Mostrar mensajes de éxito o error según la acción realizada por el usuario.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CRUD TABLA PRESTAMOS
+
+Entrada:
+El usuario selecciona la opción de gestionar préstamos en el menú principal de la aplicación.
+Proceso:
+
+1.Mostrar el submenú de gestión de préstamos con las opciones CRUD.
+2.Leer la opción seleccionada por el usuario.
+3.Según la opción seleccionada:
+  Para "Registrar Préstamo":
+    Solicitar al usuario el ID del libro prestado y el ID del usuario que realiza el préstamo.
+    Validar los datos ingresados.
+    Registrar el préstamo en la base de datos con la fecha actual como fecha de préstamo.
+  Para "Ver Préstamos":
+    Mostrar todos los préstamos registrados en la base de datos con la información de los libros prestados y los usuarios.
+  Para "Registrar Devolución":
+    Solicitar al usuario el ID del préstamo a devolver.
+    Validar los datos ingresados.
+    Actualizar el préstamo en la base de datos con la fecha actual como fecha de devolución.
+  Para "Eliminar Préstamo":
+    Solicitar al usuario el ID del préstamo a eliminar.
+    Confirmar la eliminación.
+    Eliminar el préstamo de la base de datos.
+
+Salida:
+Mostrar mensajes de éxito o error según la acción realizada por el usuario.
+
+CRUD TABLA CATEGORIAS
+
+Entrada:
+El usuario selecciona la opción de gestionar categorías en el menú principal de la aplicación.
+
+Proceso:
+1.Mostrar el submenú de gestión de categorías con las opciones CRUD.
+2.Leer la opción seleccionada por el usuario.
+3.Según la opción seleccionada:
+  Para "Crear Categoría":
+    Solicitar al usuario el nombre de la nueva categoría.
+    Validar el nombre ingresado.
+    Insertar la nueva categoría en la base de datos.
+  Para "Leer Categoría":
+    Mostrar todas las categorías registradas en la base de datos.
+  Para "Actualizar Categoría":
+    Solicitar al usuario el ID de la categoría a actualizar.
+    Mostrar el nombre actual de la categoría.
+    Solicitar al usuario el nuevo nombre de la categoría.
+    Validar el nombre ingresado.
+    Actualizar la categoría en la base de datos.
+  Para "Eliminar Categoría":
+    Solicitar al usuario el ID de la categoría a eliminar.
+    Confirmar la eliminación.
+    Eliminar la categoría de la base de datos.
+
+Salida:
+Mostrar mensajes de éxito o error según la acción realizada por el usuario.
