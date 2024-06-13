@@ -139,3 +139,11 @@ Esta es una aplicación modularizada para gestionar una biblioteca. Está dividi
 
 ### Estructura de Archivos
 Programación / Gestion_Biblioteca / index.py / libros.py / usuarios.py / prestamos.py / categorias.py
+
+### Paso a paso
+Instale las dependencias requeridas.
+Clone el repositorio en un repositorio local
+Haciendo uso de los archivos .sql importer la base de datos en mysql workbench
+Desde mySQL Workbench genere una nueva conexión
+Edite el codigo fuente con sus credenciales de conexión con la base de datos.
+Inicialice el archivo index.py
