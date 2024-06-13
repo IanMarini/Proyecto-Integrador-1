@@ -13,7 +13,7 @@ Apellido: Sampieri Baldor
 DNI: 43.284.820
 Link:https://github.com/AbrilSampieri
 Mail: abril.sampieri@gmail.com
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Proyecto: Sistema de Gestión de Biblioteca
 
 ### Descripción
@@ -122,8 +122,23 @@ Gestionar Préstamos
 - Registrar Préstamo
 - Ver Préstamos
 - Registrar Devolución
-
+- Eliminar Préstamo
+  
+Gestionar Categorias
+- Registrar Categoria
+- Ver Categoria
+- Eliminar Categoria
 Salir
+
+### Variables
+Option1: numero entero. Registra la opción "Gestionar Libros"
+Option2: numero entero. Registra la opción "Gestionar Usuarios"
+Option3: numero entero. Registra la opción "Gestionar Préstamos"
+Option4: numero entero. Registra la opción "Gestionar Categorias"
+Option5: numero entero. Registra la opción "Salir"
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Guia del Repositorio
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Sistema de Gestión de Biblioteca
@@ -140,10 +155,18 @@ Esta es una aplicación modularizada para gestionar una biblioteca. Está dividi
 ### Estructura de Archivos
 Programación / Gestion_Biblioteca / index.py / libros.py / usuarios.py / prestamos.py / categorias.py
 
+### Requisitos para su funciónamiento.
+Antes de iniciar el programa es necesario tener instalado python, la libreria de python mysql.connector; y mysql. Esta aplicación no cuenta con una interfaz gráfica por lo que debe ser ejecutada desde consola.
+
 ### Paso a paso
 1.Instale las dependencias requeridas.
-2.Clone el repositorio en un repositorio local
-3.Haciendo uso de los archivos .sql importer la base de datos en mysql workbench
-4.Desde mySQL Workbench genere una nueva conexión
+  
+2.Clone el repositorio en un repositorio local.
+  
+3.Haciendo uso de los archivos .sql importer la base de datos en mysql workbench.
+  
+4.Desde mySQL Workbench genere una nueva conexión.
+  
 5.Edite el codigo fuente con sus credenciales de conexión con la base de datos.
-6.Inicialice el archivo index.py
+  
+6.Inicialice el archivo index.py.
