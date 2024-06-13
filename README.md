@@ -202,7 +202,7 @@ Programación / Gestion_Biblioteca / index.py / libros.py / usuarios.py / presta
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Base de Datos del Proyecto
-
+## Carepta Base de Datos
 Este repositorio contiene los archivos relacionados con la base de datos del proyecto, incluyendo su estructura, diagramas y consultas SQL.
 
 ## Archivos Incluidos:
@@ -238,6 +238,19 @@ Este repositorio contiene los archivos relacionados con la base de datos del pro
 8. **Insertar DatosSQL.sql**
    - **Descripción:** Archivo SQL con consultas para insertar datos en la base de datos.
    - **Objetivo:** Proporcionar consultas predefinidas para insertar datos en las tablas de la base de datos.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### Carpeta Programación
+## Análisis EPS
+
+- **Descripción:** Este archivo contiene el análisis del proceso EPS (Entrada, Procesamiento, Salida) para un sistema o programa específico.
+- **Objetivo:** Proporcionar una descripción detallada de cómo el sistema o programa interactúa con el usuario y procesa la información.
+
+## Menu_PseudoCódigo
+
+- **Descripción:** Este archivo contiene el pseudocódigo en PSeInt para un menú de opciones en un programa o sistema.
+- **Objetivo:** Definir las opciones disponibles para el usuario y la lógica de navegación del menú dentro del programa o sistema.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
