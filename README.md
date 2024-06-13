@@ -147,7 +147,7 @@ Option5: numero entero. Registra la opción "Salir"
 # Sistema de Gestión de Biblioteca
 Esta aplicación está diseñada siguiendo un enfoque modular, lo que significa que está dividida en varios archivos que cumplen funciones específicas, separando el proyecto en partes. Los archivos se encuentran organizados en la carpeta Aplicación para facilitar su identificación y mantener el orden.
 
-## Carpeta aplicacion
+## Carpeta Aplicacion
 Aqui contiene los archivos .py donde se encuentran distribuidas las funciones e implementaciónes que componen nuestra aplicación Gestion de Biblioteca. Se describrira brevemente el propósito de cada archivo:
 ### Estructura del Proyecto
 ### index.py
@@ -239,11 +239,12 @@ Este repositorio contiene los archivos relacionados con la base de datos del pro
    - **Descripción:** Archivo SQL con consultas para insertar datos en la base de datos.
    - **Objetivo:** Proporcionar consultas predefinidas para insertar datos en las tablas de la base de datos.
 
-Este repositorio es una herramienta fundamental para comprender, diseñar y mantener la base de datos del proyecto. Los diferentes archivos proporcionan información detallada sobre la estructura de la base de datos y permiten una gestión eficiente de la misma desde la aplicación.
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Requisitos para su funciónamiento.
 Antes de iniciar el programa es necesario tener instalado python, la libreria de python mysql.connector; y mysql. Esta aplicación no cuenta con una interfaz gráfica por lo que debe ser ejecutada desde consola.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Paso a paso
 1.Instale las dependencias requeridas.
