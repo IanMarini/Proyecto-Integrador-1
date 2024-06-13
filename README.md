@@ -131,11 +131,16 @@ Gestionar Categorias
 Salir
 
 ### Variables
-Option1: numero entero. Registra la opción "Gestionar Libros"
+Option1: número entero. Registra la opción "Gestionar Libros"
+
 Option2: numero entero. Registra la opción "Gestionar Usuarios"
+
 Option3: numero entero. Registra la opción "Gestionar Préstamos"
+
 Option4: numero entero. Registra la opción "Gestionar Categorias"
+
 Option5: numero entero. Registra la opción "Salir"
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Guia del Repositorio
 
