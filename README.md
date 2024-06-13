@@ -200,17 +200,46 @@ Programación / Gestion_Biblioteca / index.py / libros.py / usuarios.py / presta
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Carpeta Base de Datos
+# Base de Datos del Proyecto
 
-Diagrama Entidad Realción Notación de Chen.png / Proceso de gestion de biblioteca.
+Este repositorio contiene los archivos relacionados con la base de datos del proyecto, incluyendo su estructura, diagramas y consultas SQL.
 
-Diagrama Crow Foot.mwb / DiagramaCrowFoot.png / Contiene la base de datos utilizada en la implementación final.
+## Archivos Incluidos:
 
-script_bd.sql Archivo que contiene el esquema de la base de datos utilizada en el programa.
+1. **Base de datos del proyecto, sus diagramas y SQL..pdf**
+   - **Descripción:** Documento PDF que contiene la descripción de la base de datos del proyecto, sus diagramas y ejemplos de consultas SQL.
+   - **Objetivo:** Proporcionar una documentación detallada de la estructura y contenido de la base de datos del proyecto.
 
-DML.sql Este archivo contiene todas las consultas realizadas a la base de datos para poder lograr las funciones implementadas en la el programa.
+2. **Conexión a BD.py**
+   - **Descripción:** Archivo Python con código relacionado con la conexión a la base de datos.
+   - **Objetivo:** Establecer y gestionar la conexión con la base de datos desde la aplicación.
 
-datos.sql Datos alojados en la database, daots ficticios insertados en la base de datos para probar su funcionamiento.
+3. **Consultas SQL.sql**
+   - **Descripción:** Archivo SQL con consultas para interactuar con la base de datos.
+   - **Objetivo:** Proporcionar consultas predefinidas utilizables en la aplicación.
+
+4. **Crear TablasSQL.sql**
+   - **Descripción:** Archivo SQL con consultas para crear las tablas de la base de datos.
+   - **Objetivo:** Definir la estructura inicial de la base de datos creando las tablas necesarias.
+
+5. **Diagrama Lógico Físico (Notación Crow Foot).mwb**
+   - **Descripción:** Archivo de modelo de base de datos en MySQL Workbench con notación Crow's Foot.
+   - **Objetivo:** Visualizar y diseñar la estructura de la base de datos utilizando MySQL Workbench.
+
+6. **Diagrama Lógico Físico (Notación Crow Foot).png**
+   - **Descripción:** Imagen PNG del diagrama lógico y físico de la base de datos en notación Crow's Foot.
+   - **Objetivo:** Proporcionar una representación visual de la estructura de la base de datos.
+
+7. **DiagramaEntidadRelación Notación Chen..png**
+   - **Descripción:** Imagen PNG del diagrama de entidad-relación de la base de datos en notación Chen.
+   - **Objetivo:** Proporcionar una representación visual alternativa de la estructura de la base de datos.
+
+8. **Insertar DatosSQL.sql**
+   - **Descripción:** Archivo SQL con consultas para insertar datos en la base de datos.
+   - **Objetivo:** Proporcionar consultas predefinidas para insertar datos en las tablas de la base de datos.
+
+Este repositorio es una herramienta fundamental para comprender, diseñar y mantener la base de datos del proyecto. Los diferentes archivos proporcionan información detallada sobre la estructura de la base de datos y permiten una gestión eficiente de la misma desde la aplicación.
+
 
 ### Requisitos para su funciónamiento.
 Antes de iniciar el programa es necesario tener instalado python, la libreria de python mysql.connector; y mysql. Esta aplicación no cuenta con una interfaz gráfica por lo que debe ser ejecutada desde consola.
