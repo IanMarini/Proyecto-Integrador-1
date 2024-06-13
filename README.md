@@ -142,23 +142,75 @@ Option4: numero entero. Registra la opción "Gestionar Categorias"
 Option5: numero entero. Registra la opción "Salir"
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Guia del Repositorio
 
+# Sistema de Gestión de Biblioteca
+Esta aplicación está diseñada siguiendo un enfoque modular, lo que significa que está dividida en varios archivos que cumplen funciones específicas, separando el proyecto en partes. Los archivos se encuentran organizados en la carpeta Aplicación para facilitar su identificación y mantener el orden.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Sistema de Gestión de Biblioteca
-### Descripción
-Esta es una aplicación modularizada para gestionar una biblioteca. Está dividida en varios archivos `.py` que contienen diferentes partes de la funcionalidad del sistema.
-
+## Carpeta aplicacion
+Aqui contiene los archivos .py donde se encuentran distribuidas las funciones e implementaciónes que componen nuestra aplicación Gestion de Biblioteca. Se describrira brevemente el propósito de cada archivo:
 ### Estructura del Proyecto
-- `index.py`: Archivo principal que contiene el menú principal de la aplicación.
-- `libros.py`: Contiene las funciones para gestionar libros, incluyendo agregar, ver, actualizar y eliminar libros.
-- `usuarios.py`: Contiene las funciones para gestionar usuarios, incluyendo agregar, ver, actualizar y eliminar usuarios.
-- `prestamos.py`: Contiene las funciones para gestionar préstamos, incluyendo registrar préstamos, ver préstamos y registrar devoluciones.
-- `categorias.py`: Contiene las funciones para la gestión de categorías como agregar, ver categorías y eliminar categorías.
+### index.py
+**Descripción:**
+Archivo principal que contiene el menú principal de la aplicación.
+
+**Objetivo:**
+- Proporcionar una interfaz de usuario para acceder a las diferentes opciones del sistema.
+- Dirigir a los usuarios a las funcionalidades específicas basadas en sus selecciones (gestión de libros, usuarios, préstamos y categorías).
+
+### libros.py
+**Descripción:**
+Contiene las funciones para gestionar libros, incluyendo agregar, ver, actualizar y eliminar libros.
+
+**Objetivo:**
+- **Agregar libros:** Permite añadir nuevos libros a la base de datos.
+- **Ver libros:** Proporciona una lista de todos los libros disponibles en la biblioteca.
+- **Actualizar libros:** Permite modificar la información de los libros existentes.
+- **Eliminar libros:** Facilita la eliminación de libros de la base de datos.
+
+### usuarios.py
+**Descripción:**
+Contiene las funciones para gestionar usuarios, incluyendo agregar, ver, actualizar y eliminar usuarios.
+
+**Objetivo:**
+- **Agregar usuarios:** Permite registrar nuevos usuarios en la biblioteca.
+- **Ver usuarios:** Muestra una lista de todos los usuarios registrados.
+- **Actualizar usuarios:** Permite actualizar la información de los usuarios existentes.
+- **Eliminar usuarios:** Facilita la eliminación de usuarios del sistema.
+
+### prestamos.py
+**Descripción:**
+Contiene las funciones para gestionar préstamos, incluyendo registrar préstamos, ver préstamos y registrar devoluciones.
+
+**Objetivo:**
+- **Registrar préstamos:** Permite registrar nuevos préstamos de libros a los usuarios.
+- **Ver préstamos:** Proporciona una lista de todos los préstamos actuales y pasados.
+- **Registrar devoluciones:** Permite registrar la devolución de libros prestados.
+
+### categorias.py
+**Descripción:**
+Contiene las funciones para la gestión de categorías como agregar, ver categorías y eliminar categorías.
+
+**Objetivo:**
+- **Agregar categorías:** Permite añadir nuevas categorías de libros a la base de datos.
+- **Ver categorías:** Muestra una lista de todas las categorías existentes.
+- **Eliminar categorías:** Facilita la eliminación de categorías de la base de datos.
 
 ### Estructura de Archivos
 Programación / Gestion_Biblioteca / index.py / libros.py / usuarios.py / prestamos.py / categorias.py
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Carpeta Base de Datos
+
+Diagrama Entidad Realción Notación de Chen.png / Proceso de gestion de biblioteca.
+
+Diagrama Crow Foot.mwb / DiagramaCrowFoot.png / Contiene la base de datos utilizada en la implementación final.
+
+script_bd.sql Archivo que contiene el esquema de la base de datos utilizada en el programa.
+
+DML.sql Este archivo contiene todas las consultas realizadas a la base de datos para poder lograr las funciones implementadas en la el programa.
+
+datos.sql Datos alojados en la database, daots ficticios insertados en la base de datos para probar su funcionamiento.
 
 ### Requisitos para su funciónamiento.
 Antes de iniciar el programa es necesario tener instalado python, la libreria de python mysql.connector; y mysql. Esta aplicación no cuenta con una interfaz gráfica por lo que debe ser ejecutada desde consola.
