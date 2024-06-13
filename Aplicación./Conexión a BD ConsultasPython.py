@@ -29,8 +29,6 @@ def add_book(titulo, autor, isbn, editorial, anio_publicacion, disponibilidad):
     cursor.close()
     connection.close()
 
-
-
 # Funcion para TRAER Y MOSTRAR LOS DATOS DE LA TABLA LIBROS.
 def get_books():
     connection = get_db_connection()
@@ -41,8 +39,6 @@ def get_books():
     connection.close()
     return result
 
-
-
 # Funcion para ACTUALIZAR LIBROS.
 def update_book(id, disponibilidad):
     connection = get_db_connection()
@@ -51,8 +47,6 @@ def update_book(id, disponibilidad):
     connection.commit()
     cursor.close()
     connection.close()
-
-
 
 # Funcion para ELIMINAR LIBROS.
 def delete_book(id):
@@ -181,8 +175,6 @@ def add_category(nombre):
     connection.close()
     print(f"Categoría agregada: {nombre}")
 
-
-
 # Funcion para TRAER Y MOSTRAR LOS DATOS DE LA TABLA PRESTAMOS.
 def get_categories():
     connection = get_db_connection()
@@ -193,8 +185,6 @@ def get_categories():
     connection.close()
     print("Obteniendo todas las categorías")
     return result
-
-
 
 # Funcion para ELIMINAR PRESTAMOS.
 def delete_category(id):
