@@ -16,7 +16,7 @@ Mail: abril.sampieri@gmail.com
 
 ### Video Proyecto Integrador
 
-https://drive.google.com/file/d/1xwUeZeiSp0866iEfkUs8h-5K8Wq6SiS9/view?usp=sharing
+https://drive.google.com/file/d/1JRrIde-RozV9qC8DyrbxoR7ZfiguoGK2/view?usp=sharing
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Proyecto: Sistema de Gestión de Biblioteca
@@ -110,6 +110,8 @@ Cardinalidad:
 - N a N (Un libro puede pertenecer a múltiples categorías y una categoría puede tener múltiples libros asociados).
 
 ### Menú de Navegación
+
+![Menu](https://github.com/IanMarini/Proyecto-Integrador-1/assets/135738365/f648a263-816c-410e-8e1e-694d09b29f66)
 
 Gestionar Libros
 - Agregar Libro
